@@ -18,7 +18,7 @@ class Patient
   end
   
   def appointments
-    Appointments.all.find_all {|appointment| appointment.patient == self}
+    Appointment.all.find_all {|appointment| appointment.patient == self}
   end
   
   def doctors
